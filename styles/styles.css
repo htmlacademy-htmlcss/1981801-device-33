@@ -39,10 +39,15 @@ body {
 }
 
 .main-header {
-    background-color: #ffe17f; 
     color: black;
     }
 
+.navigation {
+    background-image: url("../images/fon-index.jpg");
+    background-size: 1200px 186px;
+    background-repeat: no-repeat;
+    background: linear-gradient(to top, #ffe17f 97%, white 3.3% )
+}    
 .navigation-list-up {
     font-family: "Rubik-400", sans-serif;
     font-size: 18px;
@@ -63,6 +68,7 @@ body {
     font-size: 18px;
     line-height: 30px;
     text-decoration: none;
+    color:#444444;
 }
 
 .navigation-list-down {
@@ -70,6 +76,8 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: black;
+    text-transform: uppercase;
+    letter-spacing: +.20em;
 }
 
 .slider-button {
@@ -78,6 +86,8 @@ body {
     line-height: 21px;
     color: black;
     text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: +.20em;
 }
 
 .value {
@@ -90,6 +100,7 @@ body {
     font-family: "Rubik-400", sans-serif;
     font-size: 16px;
     line-height: 30px;
+    color: #444444;
 }
 
 .navigation-link {
@@ -104,12 +115,20 @@ body {
     line-height: 24px;
 }
 
+.icon {
+    background-image: url("../images/fon-product.jpg");
+    background-size: 160px 160px;
+    background-repeat: no-repeat;
+}
+
 .services-controls {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: black;
     text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: +.20em;
 }
 
 .about-title {
@@ -125,10 +144,17 @@ body {
     line-height: 50px;
     color: black; 
 }
+
+.services {
+    background-image: url("../images/delivery-fon.jpg");
+    background-size: 1440px 289px;
+
+}
 .services-about {
     font-family: "Rubik-400", sans-serif;
     font-size: 18px;
     line-height: 30px;
+    color: #444444;
 }
 
 .about {
@@ -155,6 +181,8 @@ body {
     line-height: 21px;
     color: black;
     text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: +.20em;
 }
 
 h3 {
@@ -176,6 +204,9 @@ h3 {
     line-height: 30px;
 }
 
+.subscribe {
+    background-color: #F0F0F0;
+}
 .subscribe-title {
     font-family: "Raleway", sans-serif;
     font-size: 50px;
@@ -190,6 +221,8 @@ h3 {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     line-height: 21px;
+    text-transform: uppercase;
+    letter-spacing: +.20em;
 }
 
 .main-footer {
@@ -209,6 +242,8 @@ h3 {
     line-height: 21px;
     text-decoration: none;
     color: white;
+    text-transform: uppercase;
+    letter-spacing: +.20em;
 }
 
 .contacts-phone-footer {
@@ -296,7 +331,8 @@ h3 {
 }
 
 .pagination {
-    background-color: #EBEBEB;   
+    background-color: #EBEBEB;  
+    letter-spacing: +.20em
 }
 
 .visual-direction {
@@ -305,6 +341,7 @@ h3 {
     line-height: 21px;
     color: black;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .pagination-link {
@@ -315,6 +352,31 @@ h3 {
     text-decoration: none;
 }
 
-.icon-product {
-    background-image: url(images/icon-fon.svg);
+.contacts-title-text {
+    color: #444444;
+}
+
+.pagination-link-number {
+    color: #444444;
+    text-decoration: none;
+    font-family: "Rubik-400", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.visual {
+    letter-spacing: +.20em;
+}
+
+.button-pagination-show-more {
+    letter-spacing: +.20em;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.free {
+    font-family: "Rubik-400", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
 }
