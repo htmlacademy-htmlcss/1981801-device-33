@@ -29,8 +29,14 @@
     src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
     font-display: swap;
    }   
-
+html {
+    height: 100%;
+}
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     line-height: 30px;
@@ -42,18 +48,36 @@ body {
     color: black;
     }
 
+.main-container {
+    flex-grow: 1;
+}
+
 .navigation {
+    display: flex;
+    flex-direction: column;
+    width: 1160px;
+    margin: 0 auto;
     background-image: url("../images/fon-index.jpg");
     background-size: 1200px 186px;
     background-repeat: no-repeat;
     background: linear-gradient(to top, #ffe17f 97%, white 3.3% )
 }    
+
+.navigation-top {
+    display: flex;
+    margin: 0 auto;
+}
 .navigation-list-up {
+    width: 497px;
+    margin-left: auto;
     font-family: "Rubik-400", sans-serif;
     font-size: 18px;
     line-height: 30px;
+    margin: 0;
+    padding: 0;
     color: black;
     text-decoration: none;
+    max-width: 557px;
 }
 
 .search {
@@ -61,6 +85,9 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: black;
+    margin: 0;
+    padding: 0;
+    width: 517px;
 }
 
 .about-text {
@@ -72,10 +99,14 @@ body {
 }
 
 .navigation-list-down {
+    width: 1040px;
+    margin: 0 auto;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: black;
+    margin: 0;
+    padding: 0;
     text-transform: uppercase;
     letter-spacing: +.20em;
 }
@@ -90,6 +121,10 @@ body {
     letter-spacing: +.20em;
 }
 
+.page-container {
+    width: 1160px;
+    margin: 0 auto;
+}
 .value {
     font-family: "Rubik-400", sans-serif;
     font-size: 36px;
