@@ -645,13 +645,36 @@ h3 {
 }
 
 .visual {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    box-sizing: border-box;
+    min-height: 70px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 200px;
+}
+
+.visual-title {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     line-height: 19px;
     text-transform: uppercase;
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 30px;
+    width: 92px;
+    padding-left: 0; 
+    letter-spacing: +.20em;  
+
+}
+
+.visual-title2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 19px;
+    text-transform: uppercase;
+    padding-left: 40px; 
+    letter-spacing: +.20em;  
+    padding-top: 25px;
+    margin-right: 197px;
 }
 
 .catalog-filter-title {
@@ -660,10 +683,33 @@ h3 {
     line-height: 20px;
 }
 
+.page-catalog-container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.catalog-filter-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100%;
+    padding-top: 35px;
+    padding-left: 200px;
+}
+
+.catalog-filter-form-inside {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 35px;
+    width: 200px;
+}
+
 .catalog-filter-list {
     font-family: "Rubik-400", sans-serif;
     font-size: 16px;
     line-height: 19px;
+    list-style-type: none;
 }
 
 .select-control {
@@ -673,17 +719,37 @@ h3 {
 }
 
 .main-inner {
-    background-color: white;
+    display: block;
 }
 
 .product-card {
     background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 44px;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 44px;
+    margin-top: 0;
+}
+
+.product-card-item {
+    display: grid;
+    grid-template-rows: 380px 40px;
+    row-gap: 32px;
+}
+
+.product-card-text {
+    display: grid;
+    grid-template-columns: 250px 65px;
+    justify-content: space-between;
+    max-width: 360px;
 }
 
 .inner-header {
     background-color: white;
     width: 1160px;
-    margin-left: 200px;
+    margin-left: 100px;
     display: grid;
 }
 
@@ -705,6 +771,7 @@ h3 {
     width: 760px;
     height: 55px;
     text-align: center;
+    margin-bottom: 44px;
 }
 
 .footer-social-list {
@@ -718,6 +785,10 @@ h3 {
 
 .product-pagination {
     background-color: white;
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    box-sizing: border-box;
+    padding: 70px 40px 0 40px;
 }
 
 .product-card-title {
@@ -726,11 +797,34 @@ h3 {
     line-height: 20px;
     color: black;
     text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-card-price {
+    font-family: "Rubik-400", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #444444;
 }
 
 .pagination {
     background-color: #EBEBEB;  
-    letter-spacing: +.20em
+    letter-spacing: +.20em;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 128px 200px 140px;
+    justify-content: space-between;
+    margin-bottom: 78px;
+}
+
+.pagination-list {
+    display: grid;
+    grid-template-columns: repeat(5, 40px);
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    align-content: center;
 }
 
 .visual-direction {
@@ -742,12 +836,28 @@ h3 {
     text-transform: uppercase;
 }
 
+.visual-show {
+    letter-spacing: +.20em;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
 .pagination-link {
     font-family: "Rubik-400", sans-serif;
     font-size: 16px;
     line-height: 20px;
     color: #444444;
     text-decoration: none;
+}
+
+.pagination-prev {
+    padding: 25px;
+}
+
+.pagination-next {
+    padding: 25px;
 }
 
 .contacts-title-text {
@@ -785,10 +895,6 @@ h3 {
     font-family: "Rubik-400", sans-serif;
     font-size: 16px;
     line-height: 20px;
-}
-
-.visual {
-    letter-spacing: +.20em;
 }
 
 .button-pagination-show-more {
@@ -830,14 +936,10 @@ h3 {
     margin: 0 auto;
 }
 
-.catalog-container {
-    flex-grow: 1;
-    width: 1440px;
-}
-
 .catalog-products {
-    display: flex;
-    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 460px 980px;
+    background-color: #f0f0f0;
 }
 
 .catalog-filter {
@@ -845,6 +947,7 @@ h3 {
     flex-direction: column;
     flex-grow: 1;
     background-color: #f0f0f0;
+    width: 220px;
 }
 
 .catalog-right-column {
@@ -859,4 +962,12 @@ h3 {
     text-transform: uppercase;
     letter-spacing: +.20em;
     text-decoration: none;
+}
+
+.sorting-container {
+    display: grid;
+    grid-template-columns: 147px 159px 60px;
+    color: #000000;
+    background-color: #f0f0f0;
+    justify-content: space-between;
 }
