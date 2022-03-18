@@ -7,20 +7,20 @@
   </head>
   <body>
     <header class="main-header main-header-index">
-      <div class="wrapper-content header-content">
+      <div class="wrapper-content">
         <div class="header-logo"> 
-          <a class="header-logo-link">
+          <a class="header-logo-link" href="#">
             <img class="logo"src="images/logo.svg" weight="145" height="36"alt="Логотип проекта Device">
           </a>
         </div>
         <div class="navigation-wrapper">
 				  <form class="search" action="" method="post">
-				    <input class="search-field" type="search" placeholder="Текст поиска">
+				    <input class="search-field" type="search" placeholder="Поиск по сайту">
 					  <input class="search-button" type="button" value="Найти">
 				  </form>
           <div class="navigation-top">
             <ul class="navigation-list-1">
-              <li class="navigation-link navigation-link1">
+              <li>
                 <a class="navigation-link navigation-link1" href="#">Войти</a>
               </li>
             </ul>
@@ -28,17 +28,78 @@
               <li>   
                 <a class="navigation-link navigation-link2" href="#">Сравнить</a>
               </li>
-              <li>  
+              <li class="for-popover">  
                 <a class="navigation-link navigation-link3" href="#">Корзина</a>
+                <div class="popover">
+                    <div class="first-row">
+                      <img class="selfi" src="images/selfi.png" weight="39" height="43">
+                      <p class="selfi-text">
+                        Любительская<br>селфи-палка
+                      </p>
+                      <button class="popover-close-button button button-light">
+                        <span class="visually-hidden">Закрыть</span>
+                      </button>
+                    </div>
+                    <div class="second-row">
+                      <img class="selfi" src="images/selfi-pro.png" weight="39" height="43">
+                      <p class="selfi-text">
+                        Профессиональная<br>селфи-палка
+                      </p>
+                      <button class="popover-close-button button button-light">
+                        <span class="visually-hidden">Закрыть</span>
+                      </button>
+                    </div>
+                    <div class="third-row">
+                      <p class="two">Товаров: 2</p>
+                      <p class="price">Сумма: 2000 ₽</p>
+                    </div>
+                    <div class="fourth-row">
+                      <a class="open-basket" href="#">
+                        открыть корзину
+                      </a>
+                    </div>
+                </div>
               </li>  
             </ul>    
           </div>
           <div class="navigation-list-down">
             <ul class="navigation-list-down-left">
               <li class="open-catalog">
-                <a class="navigation-catalog" href="#">
+                <a class="navigation-catalog" href="catalog.html">
                   каталог товаров
                 </a>
+                <ul class="catalog-open-window">
+                  <li class="column-open-window">
+                    <ul class=column-first-table>
+                      <li class="line-element">
+                        <a class="line-link" href="#">Виртуальная реальность</a>
+                      </li>
+                      <li class="line-element">
+                        <a class="line-link" href="catalog.html">Моноподы для селфи</a>
+                      </li>
+                      <li class="line-element">
+                        <a class="line-link" href="#">Экшн-камеры</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="column-open-window">
+                    <ul class="column-second-table">
+                      <li class="line-element">
+                        <a class="line-link" href="#">Фитнес-браслеты</a>
+                      </li> 
+                      <li class="line-element">
+                        <a class="line-link" href="#">Умные часы</a>  
+                      </li> 
+                    </ul>
+                  </li>
+                  <li class="column-open-window">
+                    <ul class="column-third-table">
+                      <li class="line-element">
+                        <a class="line-link" href="#">Квадрокоптеры</a> 
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
             </ul>
             <ul class="navigation-list-down-right">
@@ -64,12 +125,14 @@
             <li class="slider-list"> 
               <div class="slider-image slider-choose">
                 <img class="quadrocopter" src="images/slider-1.png" width="560" height="560" alt="Квадрокоптер">
-                <button class="slider-direction slider-prev" type="button">
-                  <span class="visually-hidden">Предыдущее фото</span>
-                </button>
-                <button class="slider-direction slider-next" type="button">
-                  <span class="visually-hidden">Следующее фото</span>
-                </button>
+                <div class="slider-controls">
+                  <button class="slider-direction slider-prev" type="button">
+                    <span class="visually-hidden">Предыдущее фото</span>
+                  </button>
+                  <button class="slider-direction slider-next" type="button">
+                    <span class="visually-hidden">Следующее фото</span>
+                  </button>
+                </div>
               </div>
               <div class="slider-text">
               <h2 class="title-slider">Порхает как бабочка,<br> жалит как пчела!</h2>
@@ -77,17 +140,14 @@
                 <div class="slider-pagination">
                   <a class="slider-button" href="#">Подробнее</a>
                   <ul class="slider-buttons">
-                    <li class="slider-pagination-button">
-                      <input class="visually-hidden slider-1" type="radio" id="slider1" name="active-slider" checked>
-                      <label class="one-slide" for="slider1">Один</label>
+                    <li>
+                      <button class="slider-pagination-button slider-pagination-button-current"></button>
                     </li>
-                    <li class="slider-pagination-button">
-                      <input class="visually-hidden slider-2" type="radio" id="slider2" name="active-slider">
-                      <label class="two-slide" for="slider2">Два</label> 
+                    <li>
+                      <button class="slider-pagination-button slider-pagination-button-current"></button> 
                     </li>
-                    <li class="slider-pagination-button">
-                      <input class="visually-hidden slider-3" type="radio" id="slider3" name="active-slider">
-                      <label class="three-slide" for="slider3">Три</label> 
+                    <li>
+                      <button class="slider-pagination-button slider-pagination-button-current"></button>
                     </li>
                   </ul>
                 </div>
@@ -200,11 +260,11 @@
             </a>
           </li>	
           <li class="product-one">
-            <a class="product-item-link" href="#">
+            <a class="product-item-link" href="catalog.html">
               <div class=icon>
                 <img class="icon-product" src="images/monopod.svg" width="86" height="117" alt="Моноподы для селфи" >
               </div>
-              <p class="product-one-text">Моноподы<br>для селфи</p>
+              <p class="product-text">Моноподы<br>для селфи</p>
             </a>
           </li>	
           <li class="product-one">
@@ -247,13 +307,13 @@
         <section class="services">
           <div class="tab-wrapper">
             <div class="tab-wrapper-left">
-              <button class="service-button-active" type="button">
+              <button class="service-button-active slider-line1 service-btn-active" type="button">
                 Доставка
               </button>
-              <button class="service-button-active" type="button">
+              <button class="service-button-active slider-line2 service-btn-active" type="button">
                 Гарантия
               </button>
-              <button class="service-button-active" type="button">
+              <button class="service-button-active slider-line3 service-btn-active" type="button">
                 Кредит
               </button>
             </div>
@@ -280,9 +340,9 @@
           </div>
         </section>
         <section class="delivery-rare">
-          <img class="photo-delivery" src="images/delivery (1).svg" width="1160" height="100" alt="доставим редкий товар под заказ">
-       <!-- <span class="delivery-rare"> ДОСТАВИМ РЕДКИЙ ТОВАР ПОД ЗАКАЗ</span>-->
-        </section>  
+          <a class="delivery-photo" href="#">
+          </a>
+        </section>   
         <div class="index-columns">
           <section class="about">
             <h2 class="about-title">О нас</h2>
@@ -291,9 +351,9 @@
             <p class="about-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
             </p>
             <ul class="transport-company">
-              <li><b>Меловые линии</b></li>
-              <li><b>СДИК</b></li>
-              <li><b>ТоксБерри</b></li>
+              <li class="transport-item"><b>Меловые линии</b></li>
+              <li class="transport-item"><b>СДИК</b></li>
+              <li class="transport-item"><b>ТоксБерри</b></li>
             </ul>
               <a class="button-about" href="#">подробнее о нас</a>      
           </section>
@@ -306,25 +366,26 @@
             <a class="contacts-phone contacts-title-text" href="tel:88128121212">+7(812) 812-12-12</a>
             <h3 class="contacts-time contacts-title-text">Время работы</h3>
             <p class="contacts-title-text2">пн—пт: с 10:00 до 22:00 <br>сб—вс: с 10:00 до 19:00</p>   
-            <a class="button-about" href="#">напишите нам</a>
+            <a class="button-write" href="#">напишите нам</a> 
           </section>
         </div>
         <section class="subscribe">
           <div class="subscribe-spam">
             <div class="subscribe-top">
-              <h2 class="subscribe-title">Подпишитесь<br> на рассылку</h2>
-                <p class="subscribe-about">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами, распаковками, а также акции,<br>спецпредложения и вот это вот всё.</p>
+            <h2 class="subscribe-title">Подпишитесь<br> на рассылку</h2>
+              <p class="subscribe-about">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами, распаковками, а также акции,<br>спецпредложения и вот это вот всё.</p>
             </div>
             <div class="subscribe-bottom">
               <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+                <input class="field"  placeholder="Ваш e-mail" type="text" name="newsletter-email" id="newsletter-email" required>
+                <label class="field-label" id="newsletter-email"></label>
                 <button class="button newsletter-button" type="submit">
                   <span class="subscribe-button">подписаться</span>
                 </button>
               </form>
               <p class="free">Это бесплатно</p>
             </div>  
-          </section>   
+        </section>   
     </main>
     <footer class="main-footer">
       <div class="main-footer-container">
@@ -350,57 +411,59 @@
           </nav>
             <ul class="footer-social-list">
               <li class="footer-social-item">
-                <a class="button" href="#">
-                  <span class="visually-hidden">Твиттер</span>
+                <a class="footer-social-link social-fb" href="#">
+                  <span class="visually-hidden">Фэйсбук</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="button" href="#">
-                  <span class="visually-hidden">ВКонтакте</span>
-                </a>
-              </li>
-              <li class="footer-social-item">
-                <a class="button" href="#">
+                <a class="footer-social-link social-inst" href="#">
                   <span class="visually-hidden">Инстаграм</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link social-tw" href="#">
+                  <span class="visually-hidden">Твиттер</span>
                 </a>
               </li>
             </ul>
         </div>
         <section class="logo-tel">
           <a class="contacts-phone-footer" href="tel:88128121212">+7(812) 812-12-12</a>
-          <a class="footer-logo-htmlacademy">
-            <img src="images/academy.svg" width="115" height="33" alt="HTML Academy">
-          </a>
+          <a class="footer-logo-htmlacademy" href="https://htmlacademy.ru"></a>
         </section>
       </div>
     </footer>
-<!--всплывающее-окно
-    <section class="modal">
-    <h2>Доставка под заказ</h2>
-      <button class="modal-close visually-hidden" type="button">
-        Закрыть
-      </button>
+    <section class="modal modal-container-close">
+      <div class="modal-title">
+      <h2 class="modal-title-text">Доставка под заказ</h2>
+        <button class="modal-close">
+        </button>
+      </div>
       <form class="modal-name" action="" method="post">
-        <label for="user-name">Ваше имя:</label>
-        <br>
-        <input type="text" name="user-name" id="user-name" placeholder="Введите имя">
-        <br>
-        <label for="user-mail">Ваш e-mail:</label>
-        <br>
-        <input type="text" name="user-mail" id="user-mail" placeholder="Введите адрес">
-        <br>
-        <label for="user-delivery">Что нужно привезти:</label>
-        <br>
-        <input type="text" name="user-mail" id="user-mail" placeholder="В свободной форме">
-        <br>
-        <label for="user-number">Укажите количество:</label>
-        <br>
-        <button class="minus">-</button>
-        <input type="number" min="1" max="100" step="1" value="1" class="num"	id="user-number">
-        <button class="plus">+</button>
-        <input class="send" type="submit" value="отправить">
+        <div class="modal-info1">
+          <label for="user-name" class="user-name">Ваше имя:
+            <input type="text" class="input-modal name-human" name="user-name" id="user-name" placeholder="Введите имя">
+          </label>
+          <label for="user-mail" class="user-name">Ваш e-mail:
+            <input type="text" class="input-modal mail-human" name="user-mail" id="user-mail" placeholder="Введите адрес">
+          </label>
+        </div>
+        <div class="modal-info2"> 
+          <label for="user-delivery" class="user-name">Что нужно привезти:
+            <input type="text" class="input-modal" name="user-mail" id="user-mail" placeholder="В свободной форме">
+          </label>
+          <label for="user-number" class="user-name">Количество:
+            <div class="user-number">
+              <button class="minus">-</button>
+              <input type="number" class="input-modal num" min="1" max="100" step="1" value="1"	id="user-number">
+              <button class="plus">+</button>
+            </div>
+          </label>
+        </div>
+        <button class="send" type="submit">Отправить</button>
       </form>
     </section>
--->
+      </div>
+    </div>  
   </body>
 </html>
