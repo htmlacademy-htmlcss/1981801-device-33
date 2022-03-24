@@ -328,24 +328,24 @@ input::-webkit-input-placeholder {
 
 .field:hover,
 .field:focus {
-  background-color: #DCDCDC;
+    background-color: #DCDCDC;
 }
 
 .field:focus {
-  outline: 2px solid #AF4FFF;
+    outline: 2px solid #AF4FFF;
 }
 
 .field:invalid {
-  box-shadow: none;
+    box-shadow: none;
 }
 
 .field:focus:invalid {
-  border-color: #FF3D3D;
+    border-color: #FF3D3D;
 }
 
 .field::placeholder {
-  color: #444444;
-  opacity: 50%;
+    color: #444444;
+    opacity: 50%;
 }
 
 .field-label {
