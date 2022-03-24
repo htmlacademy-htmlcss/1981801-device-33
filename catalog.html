@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.ico">
   </head>
   <body>
     <header class="main-header main-header-catalog">
@@ -14,14 +15,14 @@
             <img class="logo"src="images/logo.svg" weight="145" height="36"alt="Логотип проекта Device">
           </a>
         </div>
-        <div class="navigation-wrapper">
+        <div class="navigation-wrapper-catalog">
 				  <form class="search" action="" method="post">
 				    <input class="search-field" type="search" placeholder="Текст поиска">
 					  <input class="search-button" type="button" value="Найти">
 				  </form>
-          <div class="navigation-top">
+          <div class="navigation-top-catalog">
             <ul class="navigation-list-1">
-              <li class="navigation-link">
+              <li class="navigation-link-catalog">
                 <a class="navigation-link navigation-link1" href="#">Коля Петухов</a>
                 <a class="navigation-exit" href="#">Выйти</a>
               </li>
@@ -82,7 +83,7 @@
             </div>
             <form class="catalog-filter-form-inside" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Стоимость:</legend>
+              <legend class="catalog-filter-title">Стоимость</legend>
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0; width: 119px;">
@@ -95,11 +96,11 @@
                     </div>
                   </div>
                   <div class="range-wrapper-inputs">
-                    <label class="catalog-filter-label">
+                    <label class="catalog-filter-label catalog-label">
                       от <input class="range-input" type="number" value="0" name="min-price">
                     </label>
                     <label class="catalog-filter-label">
-                      до <input class="range-input" type="number" value="5000" name="max-price" style="width: 59px">
+                      до <input class="range-input" type="number" value="5000" name="max-price" style="width: 40px">
                     </label>
                   </div>
                 </div>  
@@ -144,8 +145,8 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="catalog-filter-group black-line2">
-              <legend class="catalog-filter-title">Bluetooth</legend>
+              <fieldset class="catalog-filter-group2 black-line2">
+              <legend class="catalog-filter-title2">Bluetooth</legend>
                 <ul class="catalog-filter-list2">
                   <li class="catalog-filter-item">
                     <label class="control-label">
@@ -218,7 +219,7 @@
                   <li class="product-card-item">
                     <img class="product-card-image" src="images/product4(1).jpg" width="360" height="380" alt="фото селфи-палки следуй за мной">
                     <div class="product-card-text">
-                      <h3 class="product-card-title">Селфи-палка "Следуй за<br>мной"</h3>
+                      <h3 class="product-card-title">Селфи-палка "Следуй<br>за мной"</h3>
                       <span class="product-card-price">1500 ₽</span>
                     </div>
                     <div class="popup">
@@ -296,7 +297,7 @@
             </ul>
         </div>
         <section class="logo-tel">
-          <a class="contacts-phone-footer" href="tel:88128121212">+7(812) 812-12-12</a>
+          <a class="contacts-phone-footer" href="tel:88128121212">Тел: +7(812) 812-12-12</a>
           <a class="footer-logo-htmlacademy" href="https://htmlacademy.ru"></a>
         </section>
       </div>
